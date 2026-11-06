@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: elena-uzatuu
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: GOOGLE_SHEET_WEBAPP_URL
+        value: https://script.google.com/macros/s/AKfycbzb6yDUAMrCTehA4oSB1VHfbnZNxXWFqS9pKOr1xf0udvYhvODcsJWgeeOI4tvbAdt8uA/exec
+
